@@ -1,0 +1,25 @@
+//プリミティブ型
+型名	  型分類	  サイズ（bit）	初期値	  値
+long	  整数	    64	          0L	      -9223372036854775808 ～ 9223372036854775807
+int	    整数	    32	          0	        -2147483648 ～ 2147483647
+short	  整数	    16	          0	        -32768 ～ 32767
+byte	  整数	    8	            0	        -128 ～ 127
+double	浮動小数	64            0.0d	    倍精度浮動小数点数
+float	  浮動小数	32	          0.0f	    単精度浮動小数点数
+boolean	論理	    1	            false	    true / false
+char	  文字	    16	          \u0000	  Unicodeの一文字(¥u0000～¥uFFFF)
+
+//参照型
+string  文字列  　              null
+
+//ラッパークラス型に変更
+//↑参照型に変えるということ（ボクシング）
+プリミティブ型	ラッパークラス型
+long	          Long
+int	            Integer
+short	          Short
+byte	          Byte
+double	        Double
+float	          Float
+boolean	        Boolean
+char	          Character
