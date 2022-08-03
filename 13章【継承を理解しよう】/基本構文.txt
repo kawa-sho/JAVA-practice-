@@ -1,0 +1,60 @@
+修飾子 class クラス名 extends スーパークラス名 {
+    // サブクラスの処理
+}
+
+// final修飾子を指定
+final public class Human {
+}
+
+// Humanが継承禁止のため、コンパイルエラー
+final public class Employee extends Human {
+}
+
+SubClass subclass = new SubClass();
+// アップキャスト
+SuperClass upCastClass = subclass;
+// ダウンキャスト
+SubClass downCastClass = (SubClass) upCastClass;
+
+// 親インスタンスのフィールド参照
+super.フィールド;
+// 親インスタンスのメソッド呼び出し
+super.メソッド();
+
+class SubClass extends SuperClass {
+    // コンストラクタ
+    SubClass() {
+        // 最初にスーパークラスのコンストラクタを呼び出す
+        super(引数);
+        // サブクラスでの初期処理
+    }
+}
+
+// 抽象クラスの宣言
+アクセス修飾子 abstract class クラス名 {
+    // 抽象メソッドの宣言
+    アクセス修飾子 abstract 戻り値の型 メソッド名(引数);
+}
+
+
+[public] interface インターフェース名 extends インターフェース名, インターフェース名 {
+    // フィールドの宣言（定数）
+    (public static final) 定数の型 定数名 = 初期値;
+    // メソッドの宣言（抽象メソッド）
+    (public abstract) 戻り値の型 メソッド名(引数);
+}
+
+
+修飾子 class クラス名 implements インターフェース名, インターフェース名 {
+    // インターフェースを実装したメソッドなど
+}
+
+
+[public] interface インターフェース名 extends インターフェース名, インターフェース名 {
+    // デフォルトメソッドの宣言
+    default 戻り値の型 メソッド名() {
+        // デフォルト処理
+    }
+}
+
+インターフェース.super.デフォルトメソッド名();
