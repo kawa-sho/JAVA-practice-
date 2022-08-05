@@ -4,7 +4,7 @@ public class Employee extends Human {
     private String department;
 
     public Employee(String name, int age, String department) {
-        super(name, age);
+    	super(name, age);
         this.department = department;
     }
 

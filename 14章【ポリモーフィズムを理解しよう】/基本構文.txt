@@ -1,0 +1,15 @@
+// スーパークラス
+public class SuperClass {
+    void overrideMethod() {
+        // スーパークラスの処理
+    }
+}
+
+// サブクラス
+class SubClass extends SuperClass {
+    // スーパークラスのメソッドをオーバーライド
+    @Override
+    void overrideMethod() {
+        // サブクラスの処理
+    }
+}
